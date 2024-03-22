@@ -19,12 +19,14 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         private int mfcRegister;                    // This is a private integer variable named mfcRegister
 
 
-        public MassFlowController(string mfcName, string mfcGasName, int mfcId, Color mfcColor) // This is a constructor for the MassFlowController class that takes in a string name, a string gasName, an integer id, and a Color color
+        public MassFlowController(string mfcName, string mfcGasName, int mfcId, double minFlowRate, double maxFlowRate) // This is a constructor for the MassFlowController class that takes in a string name, a string gasName, an integer id, and a Color color
         {
             this.mfcName = mfcName;                                                         // This sets the mfcName variable to the name parameter
             this.mfcGasName = mfcGasName;                                                   // This sets the mfcColor variable to the color parameter1
             this.mfcId = mfcId;                                                             // This sets the mfcId variable to the id parameter
             this.mfcColor = mfcColor;                                                       // This sets the mfcColor variable to the color parameter
+            this.minFlowRate = minFlowRate;                                                 // This sets the minFlowRate variable to the minFlowRate parameter
+            this.maxFlowRate = maxFlowRate;                                                 // This sets the maxFlowRate variable to the maxFlowRate parameter
         }
 
 
