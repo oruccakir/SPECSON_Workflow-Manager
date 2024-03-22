@@ -225,9 +225,7 @@
             "Argon",
             "Oxygen",
             "Hydrogen",
-            "Carbon Monoxide",
-            "Carbon Dioxide",
-            "Methane"});
+            "Propane"});
             this.comboBox_MFC1GasType.Location = new System.Drawing.Point(15, 39);
             this.comboBox_MFC1GasType.Name = "comboBox_MFC1GasType";
             this.comboBox_MFC1GasType.Size = new System.Drawing.Size(178, 24);
@@ -308,9 +306,7 @@
             "Argon",
             "Oxygen",
             "Hydrogen",
-            "Carbon Monoxide",
-            "Carbon Dioxide",
-            "Methane"});
+            "Propane"});
             this.comboBox_MFC2GasType.Location = new System.Drawing.Point(15, 39);
             this.comboBox_MFC2GasType.Name = "comboBox_MFC2GasType";
             this.comboBox_MFC2GasType.Size = new System.Drawing.Size(178, 24);
@@ -391,9 +387,7 @@
             "Argon",
             "Oxygen",
             "Hydrogen",
-            "Carbon Monoxide",
-            "Carbon Dioxide",
-            "Methane"});
+            "Propane"});
             this.comboBox_MFC3GasType.Location = new System.Drawing.Point(15, 39);
             this.comboBox_MFC3GasType.Name = "comboBox_MFC3GasType";
             this.comboBox_MFC3GasType.Size = new System.Drawing.Size(178, 24);
@@ -474,10 +468,8 @@
             "Argon",
             "Oxygen",
             "Hydrogen",
-            "Carbon Monoxide",
-            "Carbon Dioxide",
-            "Methane"});
-            this.comboBox_MFC4GasType.Location = new System.Drawing.Point(15, 39);
+            "Propane"});
+            this.comboBox_MFC4GasType.Location = new System.Drawing.Point(14, 38);
             this.comboBox_MFC4GasType.Name = "comboBox_MFC4GasType";
             this.comboBox_MFC4GasType.Size = new System.Drawing.Size(178, 24);
             this.comboBox_MFC4GasType.TabIndex = 7;
@@ -557,9 +549,7 @@
             "Argon",
             "Oxygen",
             "Hydrogen",
-            "Carbon Monoxide",
-            "Carbon Dioxide",
-            "Methane"});
+            "Propane"});
             this.comboBox_MFC5GasType.Location = new System.Drawing.Point(15, 39);
             this.comboBox_MFC5GasType.Name = "comboBox_MFC5GasType";
             this.comboBox_MFC5GasType.Size = new System.Drawing.Size(178, 24);

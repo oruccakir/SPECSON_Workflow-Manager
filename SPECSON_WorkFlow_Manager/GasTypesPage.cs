@@ -289,21 +289,21 @@ namespace SPECSON_WorkFlow_Manager
                 checkBox_MFC2.Checked = true;
             comboBox_MFC2GasType.Text = "Oxygen";
             MFC2GasName = "Oxygen";
-            numericUpDown_MFC2Percentage.Value = 8;
+            numericUpDown_MFC2Percentage.Value = 100;
 
 
             if (checkBox_MFC3.Checked == false)
                 checkBox_MFC3.Checked = true;
             comboBox_MFC3GasType.Text = "Hydrogen";
             MFC3GasName = "Hydrogen";
-            numericUpDown_MFC3Percentage.Value = 5;
+            numericUpDown_MFC3Percentage.Value = 25;
 
 
             if (checkBox_MFC4.Checked == false)
                 checkBox_MFC4.Checked = true;
-            comboBox_MFC4GasType.Text = "Carbon Monoxide";
-            MFC4GasName = "Carbon Monoxide";
-            numericUpDown_MFC4Percentage.Value = 8;
+            comboBox_MFC4GasType.Text = "Propan";
+            MFC4GasName = "Propan";
+            numericUpDown_MFC4Percentage.Value = 50;
 
             /*
             if (checkBox_MFC5.Checked == false)

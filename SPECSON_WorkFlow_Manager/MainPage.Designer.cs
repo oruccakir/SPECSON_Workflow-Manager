@@ -33,27 +33,26 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.beforeStartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -734,7 +733,7 @@
             this.groupBox_MFC5.Size = new System.Drawing.Size(415, 128);
             this.groupBox_MFC5.TabIndex = 21;
             this.groupBox_MFC5.TabStop = false;
-            this.groupBox_MFC5.Text = "MFC5 (20 mL/min)";
+            this.groupBox_MFC5.Text = "MFC5 ( - )";
             // 
             // label24
             // 
@@ -887,7 +886,7 @@
             this.groupBox_MFC4.Size = new System.Drawing.Size(415, 131);
             this.groupBox_MFC4.TabIndex = 20;
             this.groupBox_MFC4.TabStop = false;
-            this.groupBox_MFC4.Text = "MFC4 (50 mL/min)";
+            this.groupBox_MFC4.Text = "MFC4 (20 sscm)";
             // 
             // label23
             // 
@@ -953,10 +952,16 @@
             // 
             // numericUpDown_MFC4FlowRate
             // 
+            this.numericUpDown_MFC4FlowRate.DecimalPlaces = 1;
             this.numericUpDown_MFC4FlowRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numericUpDown_MFC4FlowRate.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericUpDown_MFC4FlowRate.Location = new System.Drawing.Point(83, 67);
             this.numericUpDown_MFC4FlowRate.Maximum = new decimal(new int[] {
-            50,
+            20,
             0,
             0,
             0});
@@ -1040,7 +1045,7 @@
             this.groupBox_MFC3.Size = new System.Drawing.Size(415, 131);
             this.groupBox_MFC3.TabIndex = 19;
             this.groupBox_MFC3.TabStop = false;
-            this.groupBox_MFC3.Text = "MFC3 (500 mL/min)";
+            this.groupBox_MFC3.Text = "MFC3 (20 sscm)";
             // 
             // label22
             // 
@@ -1106,10 +1111,16 @@
             // 
             // numericUpDown_MFC3FlowRate
             // 
+            this.numericUpDown_MFC3FlowRate.DecimalPlaces = 1;
             this.numericUpDown_MFC3FlowRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numericUpDown_MFC3FlowRate.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericUpDown_MFC3FlowRate.Location = new System.Drawing.Point(82, 72);
             this.numericUpDown_MFC3FlowRate.Maximum = new decimal(new int[] {
-            500,
+            20,
             0,
             0,
             0});
@@ -1193,7 +1204,7 @@
             this.groupBox_MFC2.Size = new System.Drawing.Size(415, 131);
             this.groupBox_MFC2.TabIndex = 19;
             this.groupBox_MFC2.TabStop = false;
-            this.groupBox_MFC2.Text = "MFC2 (500 mL/min)";
+            this.groupBox_MFC2.Text = "MFC2 (20 sscm)";
             // 
             // label21
             // 
@@ -1225,7 +1236,6 @@
             this.textBox_MFC2Percentage.Size = new System.Drawing.Size(93, 22);
             this.textBox_MFC2Percentage.TabIndex = 32;
             this.textBox_MFC2Percentage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox_MFC2Percentage.TextChanged += new System.EventHandler(this.textBox_MFC2Percentage_TextChanged);
             // 
             // textBox_MFC2GasName
             // 
@@ -1260,10 +1270,16 @@
             // 
             // numericUpDown_MFC2FlowRate
             // 
+            this.numericUpDown_MFC2FlowRate.DecimalPlaces = 1;
             this.numericUpDown_MFC2FlowRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numericUpDown_MFC2FlowRate.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericUpDown_MFC2FlowRate.Location = new System.Drawing.Point(83, 69);
             this.numericUpDown_MFC2FlowRate.Maximum = new decimal(new int[] {
-            500,
+            20,
             0,
             0,
             0});
@@ -1347,7 +1363,7 @@
             this.groupBox_MFC1.Size = new System.Drawing.Size(415, 131);
             this.groupBox_MFC1.TabIndex = 18;
             this.groupBox_MFC1.TabStop = false;
-            this.groupBox_MFC1.Text = "MFC1 (1000 mL/min)";
+            this.groupBox_MFC1.Text = "MFC1 (50 sscm)";
             // 
             // label_MFC1Percentage
             // 
@@ -1413,10 +1429,16 @@
             // 
             // numericUpDown_MFC1FlowRate
             // 
+            this.numericUpDown_MFC1FlowRate.DecimalPlaces = 1;
             this.numericUpDown_MFC1FlowRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.numericUpDown_MFC1FlowRate.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericUpDown_MFC1FlowRate.Location = new System.Drawing.Point(83, 69);
             this.numericUpDown_MFC1FlowRate.Maximum = new decimal(new int[] {
-            1000,
+            50,
             0,
             0,
             0});
@@ -2222,14 +2244,8 @@
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.Legend = "Legend1";
             series2.Name = "Set";
-            series3.BorderWidth = 3;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Inside";
             this.chart_Temp.Series.Add(series1);
             this.chart_Temp.Series.Add(series2);
-            this.chart_Temp.Series.Add(series3);
             this.chart_Temp.Size = new System.Drawing.Size(497, 168);
             this.chart_Temp.TabIndex = 23;
             this.chart_Temp.Text = "chart1";
@@ -2242,22 +2258,23 @@
             chartArea2.AxisY2.MajorGrid.Enabled = false;
             chartArea2.Name = "ChartArea1";
             this.chart_MFC5.ChartAreas.Add(chartArea2);
+            this.chart_MFC5.Enabled = false;
             legend2.Name = "Legend1";
             this.chart_MFC5.Legends.Add(legend2);
             this.chart_MFC5.Location = new System.Drawing.Point(626, 328);
             this.chart_MFC5.Name = "chart_MFC5";
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Actual";
             series4.BorderWidth = 3;
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series4.Legend = "Legend1";
-            series4.Name = "Actual";
-            series5.BorderWidth = 3;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "Set";
+            series4.Name = "Set";
+            this.chart_MFC5.Series.Add(series3);
             this.chart_MFC5.Series.Add(series4);
-            this.chart_MFC5.Series.Add(series5);
             this.chart_MFC5.Size = new System.Drawing.Size(497, 168);
             this.chart_MFC5.TabIndex = 22;
             this.chart_MFC5.Text = "chart1";
@@ -2274,18 +2291,18 @@
             this.chart_MFC4.Legends.Add(legend3);
             this.chart_MFC4.Location = new System.Drawing.Point(626, 136);
             this.chart_MFC4.Name = "chart_MFC4";
+            series5.BorderWidth = 3;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.Name = "Actual";
             series6.BorderWidth = 3;
             series6.ChartArea = "ChartArea1";
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series6.Legend = "Legend1";
-            series6.Name = "Actual";
-            series7.BorderWidth = 3;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.Name = "Set";
+            series6.Name = "Set";
+            this.chart_MFC4.Series.Add(series5);
             this.chart_MFC4.Series.Add(series6);
-            this.chart_MFC4.Series.Add(series7);
             this.chart_MFC4.Size = new System.Drawing.Size(497, 168);
             this.chart_MFC4.TabIndex = 21;
             this.chart_MFC4.Text = "chart1";
@@ -2302,18 +2319,18 @@
             this.chart_MFC3.Legends.Add(legend4);
             this.chart_MFC3.Location = new System.Drawing.Point(88, 516);
             this.chart_MFC3.Name = "chart_MFC3";
+            series7.BorderWidth = 3;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.Name = "Actual";
             series8.BorderWidth = 3;
             series8.ChartArea = "ChartArea1";
             series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series8.Legend = "Legend1";
-            series8.Name = "Actual";
-            series9.BorderWidth = 3;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "Set";
+            series8.Name = "Set";
+            this.chart_MFC3.Series.Add(series7);
             this.chart_MFC3.Series.Add(series8);
-            this.chart_MFC3.Series.Add(series9);
             this.chart_MFC3.Size = new System.Drawing.Size(497, 168);
             this.chart_MFC3.TabIndex = 20;
             this.chart_MFC3.Text = "chart1";
@@ -2330,18 +2347,18 @@
             this.chart_MFC2.Legends.Add(legend5);
             this.chart_MFC2.Location = new System.Drawing.Point(88, 328);
             this.chart_MFC2.Name = "chart_MFC2";
+            series9.BorderWidth = 3;
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.Name = "Actual";
             series10.BorderWidth = 3;
             series10.ChartArea = "ChartArea1";
             series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series10.Legend = "Legend1";
-            series10.Name = "Actual";
-            series11.BorderWidth = 3;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.Name = "Set";
+            series10.Name = "Set";
+            this.chart_MFC2.Series.Add(series9);
             this.chart_MFC2.Series.Add(series10);
-            this.chart_MFC2.Series.Add(series11);
             this.chart_MFC2.Size = new System.Drawing.Size(497, 168);
             this.chart_MFC2.TabIndex = 19;
             this.chart_MFC2.Text = "chart1";
@@ -2370,18 +2387,18 @@
             this.chart_MFC1.Legends.Add(legend6);
             this.chart_MFC1.Location = new System.Drawing.Point(88, 136);
             this.chart_MFC1.Name = "chart_MFC1";
+            series11.BorderWidth = 3;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.Name = "Actual";
             series12.BorderWidth = 3;
             series12.ChartArea = "ChartArea1";
             series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series12.Legend = "Legend1";
-            series12.Name = "Actual";
-            series13.BorderWidth = 3;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Legend = "Legend1";
-            series13.Name = "Set";
+            series12.Name = "Set";
+            this.chart_MFC1.Series.Add(series11);
             this.chart_MFC1.Series.Add(series12);
-            this.chart_MFC1.Series.Add(series13);
             this.chart_MFC1.Size = new System.Drawing.Size(497, 168);
             this.chart_MFC1.TabIndex = 17;
             this.chart_MFC1.Text = "chart1";
