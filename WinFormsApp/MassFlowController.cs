@@ -170,6 +170,18 @@ namespace WinFormsApp // This is a namespace named Improved_Workflow_Manager
             return mfcRegister; // This returns the mfcRegister variable
         }
 
+        // This is a public method named setMfcChart that takes in a Chart chart
+        public void setMfcChart(Chart mfcChart)
+        {
+            this.mfcChart = mfcChart; // This sets the mfcChart variable to the chart parameter
+        }
+
+        // This is a public method named getMfcChart that returns a Chart
+        public Chart getMfcChart()
+        {
+            return mfcChart; // This returns the mfcChart variable
+        }
+
         
     }
 }

@@ -1,3 +1,4 @@
+using System.Windows.Forms.DataVisualization.Charting; // Use this to plot necessary information about MFC
 namespace WinFormsApp
 {
    // This interface is used to define the methods that are required for the MassFlowController class.
@@ -68,6 +69,12 @@ namespace WinFormsApp
 
         // This method is used to get the register of the MassFlowController.
         int getMfcRegister();
+
+         // This method is used to set the chart of the MassFlowController.
+         void setMfcChart(Chart mfcChart);
+
+         // This method is used to get the chart of the MassFlowController.
+         Chart getMfcChart();
 
 
    }
