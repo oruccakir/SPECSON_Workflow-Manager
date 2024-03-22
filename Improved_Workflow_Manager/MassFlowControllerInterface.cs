@@ -4,10 +4,10 @@ namespace Improved_Workflow_Manager
    public interface MassFlowControllerInterface
    {
         // This method is used to set the flow rate of the MassFlowController. Using Connection class, we can set the flow rate of the MassFlowController.
-        public bool setMfcFlowRate(double mfcFlowRate);
+        bool setMfcFlowRate(double mfcFlowRate);
 
         // This method is used to read the flow rate of the MassFlowController. Using Connection class, we can read the flow rate of the MassFlowController.
-        public double readMfcFlowRate();
+        double readMfcFlowRate();
 
         // This method is used to set the name of the MassFlowController.
         void setMfcName(string mfcName);
@@ -56,6 +56,19 @@ namespace Improved_Workflow_Manager
 
         // This method is used to get the maximum flow rate of the MassFlowController.
         double getMaxFlowRate();
+
+        // This method is used to set the status of the MassFlowController.
+        void setMfcStatus(string mfcStatus);
+
+        // This method is used to get the status of the MassFlowController.
+        string getMfcStatus();
+
+        // This method is used to set the register of the MassFlowController.
+        void setMfcRegister(int mfcRegister);
+
+        // This method is used to get the register of the MassFlowController.
+        int getMfcRegister();
+
 
    }
 }

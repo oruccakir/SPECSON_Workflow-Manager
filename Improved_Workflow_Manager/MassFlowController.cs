@@ -16,7 +16,8 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         private double minFlowRate;                 // This is a private double variable named minFlowRate
         private double maxFlowRate;                 // This is a private double variable named maxFlowRate
         private string mfcStatus;                   // This is a private string variable named mfcStatus
-        
+        private int mfcRegister;                    // This is a private integer variable named mfcRegister
+
 
         public MassFlowController(string mfcName, string mfcGasName, int mfcId, Color mfcColor) // This is a constructor for the MassFlowController class that takes in a string name, a string gasName, an integer id, and a Color color
         {
@@ -146,6 +147,18 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         public string getMfcStatus()
         {
             return mfcStatus; // This returns the mfcStatus variable
+        }
+
+        // This is a public method named setMfcRegister that takes in an integer register
+        public void setMfcRegister(int mfcRegister)
+        {
+            this.mfcRegister = mfcRegister; // This sets the mfcRegister variable to the register parameter
+        }
+
+        // This is a public method named getMfcRegister that returns an integer
+        public int getMfcRegister()
+        {
+            return mfcRegister; // This returns the mfcRegister variable
         }
     }
 }
