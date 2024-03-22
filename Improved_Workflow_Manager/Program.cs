@@ -1,4 +1,4 @@
-namespace WinFormsApp1
+namespace Improved_Workflow_Manager
 {
     internal static class Program
     {

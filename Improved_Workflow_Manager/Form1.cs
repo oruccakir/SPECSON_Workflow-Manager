@@ -1,4 +1,4 @@
-namespace WinFormsApp1
+namespace Improved_Workflow_Manager
 {
     public partial class Form1 : Form
     {
