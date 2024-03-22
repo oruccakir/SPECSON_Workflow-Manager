@@ -3,6 +3,7 @@ using System.Drawing; // This is a System.Drawing namespace
 
 namespace Improved_Workflow_Manager // This is a namespace named Improved_Workflow_Manager
 {
+
     public class MassFlowController : MassFlowControllerInterface // This is a class named MassFlowController that implements the MassFlowControllerInterface
     {
         private string mfcName;                    // This is a private string variable named mfcName
@@ -19,14 +20,14 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         private int mfcRegister;                    // This is a private integer variable named mfcRegister
 
 
-        public MassFlowController(string mfcName, string mfcGasName, int mfcId, double minFlowRate, double maxFlowRate) // This is a constructor for the MassFlowController class that takes in a string name, a string gasName, an integer id, and a Color color
+        public MassFlowController(string mfcName, string mfcGasName, int mfcId, double minFlowRate, double maxFlowRate,string mfcStatus) // This is a constructor for the MassFlowController class that takes in a string name, a string gasName, an integer id, and a Color color
         {
             this.mfcName = mfcName;                                                         // This sets the mfcName variable to the name parameter
             this.mfcGasName = mfcGasName;                                                   // This sets the mfcColor variable to the color parameter1
-            this.mfcId = mfcId;                                                             // This sets the mfcId variable to the id parameter
-            this.mfcColor = mfcColor;                                                       // This sets the mfcColor variable to the color parameter
+            this.mfcId = mfcId;                                                             // This sets the mfcId variable to the id parameter                                                  // This sets the mfcColor variable to the color parameter
             this.minFlowRate = minFlowRate;                                                 // This sets the minFlowRate variable to the minFlowRate parameter
             this.maxFlowRate = maxFlowRate;                                                 // This sets the maxFlowRate variable to the maxFlowRate parameter
+            this.mfcStatus = mfcStatus;                                                     // This sets the mfcStatus variable to the status parameter
         }
 
 
@@ -49,7 +50,7 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         }
 
         // This is a public method named getMfcGasName that returns a string mfcGasName
-        public int getMfcGasName()                 
+        public string getMfcGasName()                 
         {
             return this.mfcGasName;
         }
@@ -107,6 +108,7 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         public bool setMfcFlowRate(double mfcFlowRate)
         {
             this.mfcFlowRate = mfcFlowRate; // This sets the mfcFlowRate variable to the flowRate parameter
+            return false; // This returns false
         }
 
         // This is a public method named readMfcFlowRate that returns a double
