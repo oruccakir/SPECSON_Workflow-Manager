@@ -1016,5 +1016,10 @@ namespace SPECSON_WorkFlow_Manager
             ExcelFile.Visible = true;
             */
         }
+
+        private void tabPage_ManualControl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

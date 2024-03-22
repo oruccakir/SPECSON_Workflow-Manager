@@ -1,11 +1,14 @@
 using System; // This is a System namespace
 using System.Drawing; // This is a System.Drawing namespace
+//using System.Windows.Forms.DataVisualization.Charting.Chart; // Use this to plot necessary information about MFC
 
 namespace Improved_Workflow_Manager // This is a namespace named Improved_Workflow_Manager
 {
 
     public class MassFlowController : MassFlowControllerInterface // This is a class named MassFlowController that implements the MassFlowControllerInterface
     {
+        
+
         private string mfcName;                    // This is a private string variable named mfcName
         private string mfcGasName;                 // This is a private string variable named mfcGasName
         private int mfcId;                         // This is a private integer variable named mfcId
@@ -18,6 +21,7 @@ namespace Improved_Workflow_Manager // This is a namespace named Improved_Workfl
         private double maxFlowRate;                 // This is a private double variable named maxFlowRate
         private string mfcStatus;                   // This is a private string variable named mfcStatus
         private int mfcRegister;                    // This is a private integer variable named mfcRegister
+        //private Chart mfcChart;                     // This is a chart to plot the necessary data for mfc
 
 
         public MassFlowController(string mfcName, string mfcGasName, int mfcId, double minFlowRate, double maxFlowRate,string mfcStatus) // This is a constructor for the MassFlowController class that takes in a string name, a string gasName, an integer id, and a Color color

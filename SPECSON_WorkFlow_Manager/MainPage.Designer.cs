@@ -377,6 +377,7 @@
             this.tabPage_ManualControl.Size = new System.Drawing.Size(1200, 700);
             this.tabPage_ManualControl.TabIndex = 0;
             this.tabPage_ManualControl.Text = "Manual Control";
+            this.tabPage_ManualControl.Click += new System.EventHandler(this.tabPage_ManualControl_Click);
             // 
             // button_Stop
             // 

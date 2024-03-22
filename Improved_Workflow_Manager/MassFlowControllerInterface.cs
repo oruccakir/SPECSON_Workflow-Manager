@@ -7,7 +7,7 @@ namespace Improved_Workflow_Manager
         bool setMfcFlowRate(double mfcFlowRate);
 
         // This method is used to read the flow rate of the MassFlowController. Using Connection class, we can read the flow rate of the MassFlowController.
-        double readMfcFlowRate();
+        double readMfcFlowRate(); 
 
         // This method is used to set the name of the MassFlowController.
         void setMfcName(string mfcName);
